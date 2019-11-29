@@ -1,0 +1,47 @@
+<odoo>
+	<data>
+
+		<record id="view_document_sop_tree" model="ir.ui.view">
+			<field name="name">document.sop.tree</field>
+			<field name="model">document.sop</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="SOP">
+					<field name="kode"/>
+					<field name="name" />
+					<field name="date_issued" />
+					<field name="date_review" />
+					<field name="date_revised" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_document_sop_form" model="ir.ui.view">
+			<field name="name">document.sop.form</field>
+			<field name="model">document.sop</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="SOP" version="7.0">
+					<sheet>
+						<group>
+							<group>
+								<field name="kode"/>
+								<field name="name"/>
+							</group>
+							<group>
+								<field name="date_issued"/>
+								<field name="date_review"/>
+								<field name="date_revised"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+		
+		<record id="view_master_kelompok_perangkat_tree" model="ir.ui.view">
+			<field name="name">master.kelompok_perangkat.tree</field>
+			<field name="model">master.kelompok_perangkat</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Kelompok Perangkat">
+					<field name="perangkat_id"/>
+					<field name="no_kelompok"/>
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_master_kelompok_perangkat_form" model="ir.ui.view">
+			<field name="name">master.kelompok_perangkat.form</field>
+			<field name="model">master.kelompok_perangkat</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="kelompok Perangkat Form" version="7.0">
+					<sheet>
+						<div class="oe_title">
+							<label for="name" class="oe_edit_only" string="Nama kelompok Perangkat"/>
+							<h1>
+								<field name="name"/>
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="perangkat_id"/>
+								<field name="no_kelompok"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

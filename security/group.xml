@@ -1,0 +1,11 @@
+<odoo>
+	<data noupdate="0">
+		<record id="group_manager" model="res.groups">
+			<field name="name">Management / Manager</field>
+		</record>
+
+		<record id="group_user" model="res.groups">
+			<field name="name">Management / User</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,70 @@
+<odoo>
+	<data>
+		
+		<record id="view_management_powerdistribution_tree" model="ir.ui.view">
+			<field name="name">management.powerdistribution.tree</field>
+			<field name="model">management.powerdistribution</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Asset">
+					<field name="ruang" />
+					<field name="posisi" />
+					<field name="no_reg" />
+					<field name="merek" />
+					<field name="fungsi" />
+					<field name="koneksi" />
+					<field name="distribusi" widget="progressbar"/>
+					<field name="visit" widget="progressbar"/>
+					<field name="note" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_management_powerdistribution_form" model="ir.ui.view">
+			<field name="name">management.powerdistribution.form</field>
+			<field name="model">management.powerdistribution</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="Power Distribution" version="7.0">
+					<sheet>
+						<group>
+							<group>
+								<field name="ruang"/>
+								<field name="posisi"/>
+								<field name="no_reg"/>
+								<field name="merek"/>
+							</group>
+							<group>
+								<field name="fungsi"/>
+								<field name="koneksi"/>
+								<field name="distribusi"/>
+								<field name="visit"/>
+							</group>
+						</group>
+						<div class="oe_title">
+							<label for="note" class="oe_edit_only" string="Note"/>
+							<field name="note" placeholder="Note"/>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="powerdistribution_search" model="ir.ui.view">
+			<field name="name">powerdistribution_search</field>
+			<field name="model">management.powerdistribution</field>
+			<field name="arch" type="xml">
+				<search string="Search Power Distribution">
+					<filter string="Visit" name="visit" domain="[('visit','>',0)]" />
+					<field name="ruang"/>
+					<field name="posisi"/>
+				</search>
+			</field>
+		</record>
+
+	</data>
+</odoo>

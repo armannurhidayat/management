@@ -1,0 +1,60 @@
+<odoo>
+	<data>
+
+		<record id="view_document_rekuitmen_tree" model="ir.ui.view">
+			<field name="name">document.rekuitmen.tree</field>
+			<field name="model">document.rekuitmen</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Rekuitmen">
+					<field name="name"/>
+					<field name="kode" />
+					<field name="kelamin" />
+					<field name="usia" />
+					<field name="pendidikan" />
+					<field name="telp" />
+					<field name="email"/>
+					<field name="file" />
+					<field name="pengalaman" />
+					<field name="catatan" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_document_rekuitmen_form" model="ir.ui.view">
+			<field name="name">document.rekuitmen.form</field>
+			<field name="model">document.rekuitmen</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="Rekuitmen" version="7.0">
+					<sheet>
+						<group>
+							<group>
+								<field name="name"/>
+								<field name="kode"/>
+								<field name="kelamin"/>
+								<field name="usia"/>
+								<field name="pendidikan"/>
+							</group>
+							<group>
+								<field name="telp"/>
+								<field name="email" placeholder="admin@admin.com"/>
+								<field name="file"/>
+								<field name="pengalaman" />
+							</group>
+						</group>
+						<div class="oe_title">
+							<label for="catatan" class="oe_edit_only" string="Catatan"/>
+							<field name="catatan" placeholder="Catatan"/>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

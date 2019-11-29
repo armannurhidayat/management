@@ -1,0 +1,39 @@
+<odoo>
+	<data>
+		
+		<record id="view_master_subunit_tree" model="ir.ui.view">
+			<field name="name">master.subunit.tree</field>
+			<field name="model">master.subunit</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Sub Unit">
+					<field name="unit_id" />
+					<field name="no_sub" />
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_master_subunit_form" model="ir.ui.view">
+			<field name="name">master.subunit.form</field>
+			<field name="model">master.subunit</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="Sub Unit Form" version="7.0">
+					<sheet>
+						<group>
+							<field name="name"/>
+							<field name="unit_id"/>
+							<field name="no_sub"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

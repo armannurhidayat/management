@@ -1,0 +1,44 @@
+<odoo>
+	<data>
+		
+		<record id="view_management_maintenances_tree" model="ir.ui.view">
+			<field name="name">management.maintenances.tree</field>
+			<field name="model">management.maintenances</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Maintenances">
+					<field name="asset_id"/>
+					<field name="tgl_berkunjung"/>
+					<field name="tiket" />
+					<field name="tujuan" />
+					<field name="keterangan" />
+					<field name="status" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_management_maintenances_form" model="ir.ui.view">
+			<field name="name">management.maintenances.form</field>
+			<field name="model">management.maintenances</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="Ruang Form" version="7.0">
+					<sheet>
+						<group>
+							<field name="tgl_berkunjung" />
+							<field name="tiket" />
+							<field name="tujuan" />
+							<field name="status" />
+							<field name="keterangan" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

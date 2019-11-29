@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+		
+		<record id="view_document_agenda_tree" model="ir.ui.view">
+			<field name="name">document.agenda.tree</field>
+			<field name="model">document.agenda</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Agenda">
+					<field name="tema"/>
+					<field name="tgl_mulai" />
+					<field name="tgl_selesai" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_document_agenda_form" model="ir.ui.view">
+			<field name="name">document.agenda.form</field>
+			<field name="model">document.agenda</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+
+			<field name="arch" type="xml">
+				<form string="Agenda" version="7.0">
+					<sheet>
+						<div class="oe_title">
+							<label for="tema" class="oe_edit_only" string="Tema"/>
+							<h1>
+								<field name="tema"/>
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="tgl_mulai"/>
+								<field name="tgl_selesai"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

@@ -1,0 +1,70 @@
+<odoo>
+	<data>
+
+		<record id="view_data_user_tree" model="ir.ui.view">
+			<field name="name">master.data_user.tree</field>
+			<field name="model">master.data_user</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			
+			<field name="arch" type="xml">
+				<tree string="Data User">
+					<field name="username"/>
+					<field name="identitas" />
+					<field name="name" />
+					<field name="level" />
+					<field name="blokir" />
+					<field name="pemandu" />
+					<field name="pengelola" />
+					<field name="temp_admin" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_data_user_form" model="ir.ui.view">
+			<field name="name">master.data_user.form</field>
+			<field name="model">master.data_user</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8" />
+
+			<field name="arch" type="xml">
+				<form string="Data User Form">
+					<sheet>
+						<group>
+							<group>
+								<field name="username"/>
+								<field name="identitas"/>
+								<field name="name"/>
+								<field name="pemandu" widget="radio" options="{'horizontal': true}"/>
+							</group>
+							<group>
+								<field name="blokir"/>
+								<field name="pengelola" />
+								<field name="temp_admin" placeholder="temp.."/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="data_user_search" model="ir.ui.view">
+			<field name="name">data_user_search</field>
+			<field name="model">master.data_user</field>
+			<field name="arch" type="xml">
+				<search string="Search User">
+					<filter string="Blokir" name="blokir" domain="[('blokir','=',True)]" />
+					<filter string="Pengelola" name="pengelola" domain="[('pengelola','=',1)]" /> <!-- Kondisi field bollean bisa true/false atau 0/1 -->
+					<field name="name"/>
+					<field name="username"/>
+					<field name="level"/>
+					<group string="Group By..">
+						<filter name="blokir" string="Blokir" domain="[]" context="{'group_by':'blokir'}"/>
+						<filter name="pengelola" string="Pengelola" domain="[]" context="{'group_by':'pengelola'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+	</data>
+</odoo>

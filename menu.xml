@@ -1,0 +1,391 @@
+<odoo>
+	<data>
+		
+		<!-- Management -->
+        <!-- Action Asset -->
+		<record id="action_asset_list" model="ir.actions.act_window">
+            <field name="name">Management Asset</field>
+            <field name="res_model">management.asset</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Asset </p>
+                <p>klik tombol create untuk membuat Asset baru</p>
+            </field>
+        </record>
+
+		<!-- Action Layout -->
+        <record id="action_layout_list" model="ir.actions.act_window">
+            <field name="name">Management Layout</field>
+            <field name="res_model">management.layout</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Layout </p>
+                <p>klik tombol create untuk membuat Layout baru</p>
+            </field>
+        </record>
+
+        <!-- Action Power Distribution -->
+        <record id="action_powerdistribution_list" model="ir.actions.act_window">
+            <field name="name">Management Power Distribution</field>
+            <field name="res_model">management.powerdistribution</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Power Distribution </p>
+                <p>klik tombol create untuk membuat Power Distribution baru</p>
+            </field>
+        </record>
+
+        <!-- Action LAN Distribution -->
+        <record id="action_landistribution_list" model="ir.actions.act_window">
+            <field name="name">Management LAN Distribution</field>
+            <field name="res_model">management.landistribution</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a LAN Distribution </p>
+                <p>klik tombol create untuk membuat LAN Distribution baru</p>
+            </field>
+        </record>
+
+        <!-- Action Capacity -->
+        <record id="action_capacity_list" model="ir.actions.act_window">
+            <field name="name">Management Capacity</field>
+            <field name="res_model">management.capacity</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Capacity </p>
+                <p>klik tombol create untuk membuat Capacity baru</p>
+            </field>
+        </record>
+
+        <!-- Action Utilisasi -->
+        <record id="action_utilisasi_list" model="ir.actions.act_window">
+            <field name="name">Management Utilisasi</field>
+            <field name="res_model">management.utilisasi</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Utilisasi </p>
+                <p>klik tombol create untuk membuat Utilisasi baru</p>
+            </field>
+        </record>
+
+        <!-- Action Maintenances -->
+        <record id="action_maintenances_list" model="ir.actions.act_window">
+            <field name="name">Maintenances</field>
+            <field name="res_model">management.maintenances</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Maintenances </p>
+                <p>klik tombol create untuk membuat Maintenances baru</p>
+            </field>
+        </record>
+
+
+        <!-- Document -->
+        <!-- Action Rekuitmen -->
+        <record id="action_rekuitmen_list" model="ir.actions.act_window">
+            <field name="name">Document Rekuitmen</field>
+            <field name="res_model">document.rekuitmen</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Rekuitmen </p>
+                <p>klik tombol create untuk membuat Rekuitmen baru</p>
+            </field>
+        </record>
+
+        <!-- Action SOP -->
+        <record id="action_sop_list" model="ir.actions.act_window">
+            <field name="name">Document SOP</field>
+            <field name="res_model">document.sop</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a SOP </p>
+                <p>klik tombol create untuk membuat SOP baru</p>
+            </field>
+        </record>
+
+        <!-- Action BCP -->
+        <record id="action_bcp_list" model="ir.actions.act_window">
+            <field name="name">Document BCP</field>
+            <field name="res_model">document.bcp</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a BCP </p>
+                <p>klik tombol create untuk membuat BCP baru</p>
+            </field>
+        </record>
+
+        <!-- Action Berita -->
+        <record id="action_berita_list" model="ir.actions.act_window">
+            <field name="name">Document Berita</field>
+            <field name="res_model">document.berita</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Berita </p>
+                <p>klik tombol create untuk membuat Berita baru</p>
+            </field>
+        </record>
+
+        <!-- Action Agenda -->
+        <record id="action_agenda_list" model="ir.actions.act_window">
+            <field name="name">Document Agenda</field>
+            <field name="res_model">document.agenda</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Agenda </p>
+                <p>klik tombol create untuk membuat Agenda baru</p>
+            </field>
+        </record>
+
+        <!-- Data Master -->
+        <!-- Action Lokasi -->
+        <record id="action_lokasi_list" model="ir.actions.act_window">
+            <field name="name">Lokasi</field>
+            <field name="res_model">master.lokasi</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Lokasi </p>
+                <p>klik tombol create untuk membuat Lokasi baru</p>
+            </field>
+        </record>
+
+        <!-- Action Ruang -->
+        <record id="action_ruang_list" model="ir.actions.act_window">
+            <field name="name">Ruang</field>
+            <field name="res_model">master.ruang</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Ruang </p>
+                <p>klik tombol create untuk membuat Ruang baru</p>
+            </field>
+        </record>
+
+        <!-- Action Sub Ruang -->
+        <record id="action_subruang_list" model="ir.actions.act_window">
+            <field name="name">Sub Ruang</field>
+            <field name="res_model">master.subruang</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Sub Ruang </p>
+                <p>klik tombol create untuk membuat Sub Ruang baru</p>
+            </field>
+        </record>
+
+        <!-- Action Merek -->
+        <record id="action_merek_list" model="ir.actions.act_window">
+            <field name="name">Merek</field>
+            <field name="res_model">master.merek</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Merek </p>
+                <p>klik tombol create untuk membuat Merek baru</p>
+            </field>
+        </record>
+
+        <!-- Action Unit -->
+        <record id="action_unit_list" model="ir.actions.act_window">
+            <field name="name">Unit</field>
+            <field name="res_model">master.unit</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Unit </p>
+                <p>klik tombol create untuk membuat Unit baru</p>
+            </field>
+        </record>
+
+        <!-- Action Sub Unit -->
+        <record id="action_subunit_list" model="ir.actions.act_window">
+            <field name="name">Sub Unit</field>
+            <field name="res_model">master.subunit</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Sub Unit </p>
+                <p>klik tombol create untuk membuat Sub Unit baru</p>
+            </field>
+        </record>
+
+        <!-- Action Kode Perangkat -->
+        <record id="action_kode_perangkat_list" model="ir.actions.act_window">
+            <field name="name">Kode Perangkat</field>
+            <field name="res_model">master.kode_perangkat</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Kode Perangkat </p>
+                <p>klik tombol create untuk membuat Kode Perangkat baru</p>
+            </field>
+        </record>
+
+        <!-- Action Kelompok Perangkat -->
+        <record id="action_kelompok_perangkat_list" model="ir.actions.act_window">
+            <field name="name">Kelompok Perangkat</field>
+            <field name="res_model">master.kelompok_perangkat</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Kelompok Perangkat </p>
+                <p>klik tombol create untuk membuat Kelompok Perangkat baru</p>
+            </field>
+        </record>
+
+        <!-- Action Data Maste -->
+        <record id="action_data_user_list" model="ir.actions.act_window">
+            <field name="name">Data User</field>
+            <field name="res_model">master.data_user</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to create a Data User </p>
+                <p>klik tombol create untuk membuat Data User baru</p>
+            </field>
+        </record>
+
+        
+
+        <!-- Menu -->
+        <menuitem id="management_0"
+    	name="Management"
+    	sequence="20"/>
+
+        <!-- Management -->
+        <menuitem id="management_1"
+        name="Management"
+        parent="management_0"
+        sequence="20"/>
+
+        <menuitem id="menu_management_asset"
+        name="Asset"
+        parent="management_1"
+        action="action_asset_list"
+        sequence="30"/>
+
+        <menuitem id="menu_management_layout"
+        name="Layout"
+        parent="management_1"
+        action="action_layout_list"
+        sequence="40"/>
+
+        <menuitem id="menu_management_powerdistribution"
+        name="Power Distribution"
+        parent="management_1"
+        action="action_powerdistribution_list"
+        sequence="50"/>
+
+        <menuitem id="menu_management_landistribution"
+        name="LAN Distribution"
+        parent="management_1"
+        action="action_landistribution_list"
+        sequence="60"/>
+
+        <menuitem id="menu_management_capacity"
+        name="Capacity"
+        parent="management_1"
+        action="action_capacity_list"
+        sequence="70"/>
+
+        <menuitem id="menu_management_utilisasi"
+        name="Utilisasi"
+        parent="management_1"
+        action="action_utilisasi_list"
+        sequence="80"/>
+
+        <menuitem id="menu_management_maintenances"
+        name="Maintenances"
+        parent="management_1"
+        action="action_maintenances_list"
+        sequence="240"/>
+
+        <!-- Document -->
+        <menuitem id="document_1"
+        name="Documents"
+        parent="management_0"
+        sequence="90"/>
+
+        <menuitem id="menu_document_rekuitmen"
+        name="SDM"
+        parent="document_1"
+        action="action_rekuitmen_list"
+        sequence="100"/>
+
+        <menuitem id="menu_document_sop"
+        name="SOP"
+        parent="document_1"
+        action="action_sop_list"
+        sequence="110"/>
+
+        <menuitem id="menu_document_bcp"
+        name="BCP"
+        parent="document_1"
+        action="action_bcp_list"
+        sequence="120"/>
+
+        <menuitem id="menu_document_berita"
+        name="Berita"
+        parent="document_1"
+        action="action_berita_list"
+        sequence="130"/>
+
+        <menuitem id="menu_document_agenda"
+        name="Agenda"
+        parent="document_1"
+        action="action_agenda_list"
+        sequence="140"/>
+
+        <!-- Data Master -->
+        <menuitem id="data_master_1"
+        name="Data Master"
+        parent="management_0"
+        sequence="150"/>
+
+        <menuitem id="menu_master_lokasi"
+        name="Lokasi"
+        parent="data_master_1"
+        action="action_lokasi_list"
+        sequence="160"/>
+
+        <menuitem id="menu_master_ruang"
+        name="Ruang"
+        parent="data_master_1"
+        action="action_ruang_list"
+        sequence="170"/>
+
+        <menuitem id="menu_master_subruang"
+        name="Sub Ruang"
+        parent="data_master_1"
+        action="action_subruang_list"
+        sequence="180"/>
+
+        <menuitem id="menu_master_merek"
+        name="Merek"
+        parent="data_master_1"
+        action="action_merek_list"
+        sequence="190"/>
+
+        <menuitem id="menu_master_unit"
+        name="Unit"
+        parent="data_master_1"
+        action="action_unit_list"
+        sequence="200"/>
+
+        <menuitem id="menu_master_subunit"
+        name="Sub Unit"
+        parent="data_master_1"
+        action="action_subunit_list"
+        sequence="210"/>
+
+        <menuitem id="menu_master_kode_perangkat"
+        name="Kode Perangkat"
+        parent="data_master_1"
+        action="action_kode_perangkat_list"
+        sequence="220"/>
+
+        <menuitem id="menu_master_kelompok_perangkat"
+        name="Kelompok Perangkat"
+        parent="data_master_1"
+        action="action_kelompok_perangkat_list"
+        sequence="230"/>
+
+        <menuitem id="menu_master_data_user"
+        name="Data User"
+        parent="data_master_1"
+        action="action_data_user_list"
+        sequence="250"/>
+
+	</data>
+</odoo>

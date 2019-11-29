@@ -1,0 +1,15 @@
+<odoo>
+	<data>
+		
+		<record id="session_sequence" model="ir.sequence">
+			<field name="name">Asset squence</field>
+			<field name="code">management.asset</field>
+			<field name="prefix">Asset/</field>
+			<field name="suffix">/NV</field>
+			<field name="padding">3</field>
+			<field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+		</record>
+
+	</data>
+</odoo>
